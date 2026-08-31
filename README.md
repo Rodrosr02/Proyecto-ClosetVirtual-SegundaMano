@@ -34,20 +34,3 @@ implementar la lógica de persistencia (JDBC, JPA, etc.).
 * Se agregó un constructor vacío y uno con todos los parámetros en cada clase,
 además de un `toString()` para facilitar la depuración.
 
-## Próximos pasos sugeridos
-
-1. Definir la capa de persistencia (DAO/Repository) y conectar los métodos
-`create`, `selectAll`, `selectById`, `update`, `delete` a una base de datos.
-2. Decidir si los métodos de consulta (`selectAll`, `selectById`) deberían
-devolver datos (por ejemplo `List<Usuario>` o `Usuario`) en lugar de `void`,
-ya que en el diagrama original están definidos como `void`.
-3. Agregar validaciones (por ejemplo, formato de correo, contraseña segura).
-4. Evaluar el uso de un framework como Spring Boot para exponer estas
-entidades como una API REST.
-
-## Compilar el proyecto
-
-```bash
-mvn compile
-```
-
